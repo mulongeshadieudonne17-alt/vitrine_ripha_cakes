@@ -1,0 +1,208 @@
+.mydivname {
+    background-color:white;
+    ;
+    padding: 50px;
+    color:black;
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+    transition: transform 0.2s ease-in-out; 
+    margin-bottom: 50px;
+   
+}
+.mydivname:hover{
+    transform: translateY(5px);
+}
+
+p {
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: normal;
+   
+}
+.divmain {
+    
+    display:flex; 
+    justify-content:space-around;
+    flex-wrap: wrap;
+      
+    background-color: whitesmoke;
+    
+}
+ 
+.about-us {
+    flex: 0 0 48%;
+    box-sizing: border-box;
+    margin: 1%;
+}
+img {
+    border-radius: 500px;
+     border:20px;
+}
+
+.header-container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+.footer-name{
+    text-align:center;
+    color:brown;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:url(images/pic.jpg) no-repeat center center/cover;
+    color:white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content{
+    max-width: 800px;
+    margin:auto;
+    z-index: 1;
+    position: relative;
+
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.cta-button{
+    background-color: rgb(170, 170, 2);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.accueil{
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    flex: 1 1 48%;
+    box-sizing: border-box;
+    margin:1%;
+
+}
+@media (max-width: 768px) {
+  .about-us { 
+    flex: 0 0 100%;
+    text-align: center;
+     }
+     .about-us img{
+        max-width: 100%;
+        height: auto;
+     }
+  
+}
+
+@media (max-width: 768px) {
+  .mydivname { 
+    flex: 0 0 100%;
+     }
+  
+}
+nav a{
+    color: rgb(2, 2, 2);
+    text-decoration:none;
+    padding: 10px 15px;
+    transition: background-coloe 0.3s ease;
+}
+nav a:hover {
+   text-decoration: underline;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cta-button-header{
+    background-color: rgb(170, 170, 2);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact-info{
+  
+ 
+    padding: 50px;
+    color:black;
+    text-align: ;
+    
+    margin: 1%;
+    padding: 15px;
+    border-radius: 8px;
+   
+     
+    margin-bottom: 50px;
+
+}
+
+.contact-form{
+     padding: 50px;
+    color:black;
+    text-align: ;
+    
+    margin: 1%;
+    padding: 15px;
+    border-radius: 8px;
+   
+     
+    margin-bottom: 50px;
+}
+.icons {
+  display: flex;
+    justify-content: center;   /* centre horizontalement */
+    align-items: center;       /* centre verticalement si hauteur définie */
+    gap: 20px;                 /* espace entre les icônes */
+    margin-top: 30px;
+}
+.icons a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: #c59d5f; /* couleur élégante */
+    padding: 12px 18px;
+    border-radius: 50px;       /* effet bouton arrondi */
+    transition: 0.3s ease;
+}
+  
+.icons a:hover {
+    background-color: #a67c3c;
+    transform: translateY(-3px); /* petit effet moderne */
+}
